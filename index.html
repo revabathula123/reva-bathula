@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&display=swap">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+</style>
+  <body>
+    <nav>
+  
+      <div class="nav-items">
+        <a href="index.html">Home</a> <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="column-left">
+          <center><h1>Hey there, I'm Reva Bathula a Aspiring UI/UX Designer!</h1></center>
+        </div>
+        <div class="column-right">
+          <img
+            src="./reva.jpg"
+            alt="illustration
+        "
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="hero">
+      <div class="hero-container">
+        <div class="column-left">
+          <h1>Mindfulness Educator</h1>
+            <button><a href="about.html"><h2>Project</h2></a></button>
+           
+        </div>
+        <div class="column-right">
+          <img
+            src="./Picture4.jpg"
+            alt="illustration
+        "
+           class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+    
+
+  <script>
+    // Optional: Add JavaScript for smoother scrolling
+    document.querySelectorAll('.hero').forEach(hero => {
+        hero.addEventListener('click', () => {
+            hero.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+
+
+
+
+  </body>
+</html>
